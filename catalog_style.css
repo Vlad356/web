@@ -1,0 +1,117 @@
+body {
+    background: #17181a;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 32px 18px 30px 18px;
+}
+
+#catalog-title {
+    color: #f2f2f2;
+    font-size: 2rem;
+    font-weight: 800;
+    letter-spacing: 0.4px;
+    margin-bottom: 18px;
+    margin-top: 18px;
+    text-shadow: 0 1px 9px #cdefff28;
+}
+
+.tracks-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: flex-start;
+    margin-top: 12px;
+}
+
+.track-card {
+    background: #363030;
+    border-radius: 16px;
+    box-shadow: 0 4px 20px #0c3b2a22, 0 2px 9px #0001;
+    padding: 24px 21px 21px 21px;
+    min-width: 245px;
+    max-width: 320px;
+    flex: 1 1 260px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    position: relative;
+    transition: box-shadow 0.2s, transform 0.18s;
+    border: 1.5px solid #eaf2ee;
+}
+.track-card:hover {
+    box-shadow: 0 10px 28px #36d39933, 0 6px 21px #b7f1ec16;
+    transform: translateY(-4px) scale(1.018);
+    border-color: #a8eed3;
+}
+
+.track-title {
+    font-size: 1.19rem;
+    font-weight: 700;
+    color: #f2f4fc;
+    margin-bottom: 2px;
+    letter-spacing: 0.3px;
+}
+.track-artist {
+    color: #24b984;
+    font-size: 1.07rem;
+    font-weight: 500;
+    letter-spacing: 0.12px;
+}
+.track-genre {
+    color: #89a2b6;
+    font-size: 0.97rem;
+    margin-bottom: 3px;
+    font-style: italic;
+}
+.audio-player {
+    margin-top: 7px;
+    width: 100%;
+}
+
+.btn-delete {
+    margin-top: 14px;
+    background: linear-gradient(92deg,#f44949 40%,#e32c63 100%);
+    color: #fff;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    padding: 8px 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px #f4494925;
+    font-size: 1.04rem;
+    letter-spacing: 0.02em;
+    transition: background 0.14s, box-shadow 0.13s;
+    align-self: flex-end;
+}
+.btn-delete:hover {
+    background: linear-gradient(92deg,#e32c63 40%,#f44949 100%);
+    box-shadow: 0 4px 18px #f449493c;
+}
+
+.empty {
+    padding: 38px;
+    color: #a0abb6;
+    font-size: 1.15rem;
+    text-align: center;
+    letter-spacing: 0.07em;
+}
+
+/* Scrollbar стилізація */
+.tracks-grid {
+    scrollbar-width: thin;
+    scrollbar-color: #36d399 #eaf2ee;
+}
+.tracks-grid::-webkit-scrollbar {
+    height: 10px;
+    background: #eaf2ee;
+    border-radius: 5px;
+}
+.tracks-grid::-webkit-scrollbar-thumb {
+    background: #36d399;
+    border-radius: 5px;
+}
+
+
