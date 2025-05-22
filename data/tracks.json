@@ -1,0 +1,79 @@
+[
+  {
+    "id": 1747929777826,
+    "title": "Track 1",
+    "artist": "dj",
+    "genre": "pop",
+    "audio": "audio/1747929777731-amwipe_Gmaj(160bpm).mp3"
+  },
+  {
+    "id": 1747929835263,
+    "title": "Track 2",
+    "artist": "dj",
+    "genre": "pop",
+    "audio": "audio/1747929835216-EjgAtooth.mp3"
+  },
+  {
+    "id": 1747929857659,
+    "title": "Track 3",
+    "artist": "dj",
+    "genre": "electro",
+    "audio": "audio/1747929857546-fewtm_Emin(160bpm).mp3"
+  },
+  {
+    "id": 1747929878567,
+    "title": "Track 4",
+    "artist": "dj",
+    "genre": "trap",
+    "audio": "audio/1747929878435-Ffty2c_Dmaj(131bpm)2.mp3"
+  },
+  {
+    "id": 1747929902306,
+    "title": "Track 5",
+    "artist": "dj",
+    "genre": "edm",
+    "audio": "audio/1747929902275-glory.mp3"
+  },
+  {
+    "id": 1747929924073,
+    "title": "Track 6",
+    "artist": "dj 2",
+    "genre": "trap",
+    "audio": "audio/1747929923963-lovibe_Amin(165bpm).mp3"
+  },
+  {
+    "id": 1747929942182,
+    "title": "Track 7",
+    "artist": "dj 3",
+    "genre": "jazz",
+    "audio": "audio/1747929942070-msrm_Emin(150bpm).mp3"
+  },
+  {
+    "id": 1747929968526,
+    "title": "Track 8",
+    "artist": "dj 2",
+    "genre": "trap",
+    "audio": "audio/1747929968407-noltwthh_Fmin(150bpm).mp3"
+  },
+  {
+    "id": 1747929990490,
+    "title": "Track 9",
+    "artist": "dj 3",
+    "genre": "techno",
+    "audio": "audio/1747929990399-odin_5_722.mp3"
+  },
+  {
+    "id": 1747930013430,
+    "title": "Track 10",
+    "artist": "dj 3",
+    "genre": "ambient",
+    "audio": "audio/1747930013319-ranger.mp3"
+  },
+  {
+    "id": 1747930035743,
+    "title": "Track 11",
+    "artist": "dj 3 ",
+    "genre": "edm",
+    "audio": "audio/1747930035679-trproad.mp3"
+  }
+]

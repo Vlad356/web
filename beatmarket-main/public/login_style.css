@@ -1,0 +1,219 @@
+body {
+    background: #f6f8fa;
+    color: #222;
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    background: #101014;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: 64px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.13);
+}
+
+.nav-left {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+}
+
+.logo {
+    font-size: 1.45rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #36d399;
+}
+
+.nav-menu {
+    display: flex;
+    gap: 18px;
+}
+
+.nav-link {
+    color: #f2f2f2;
+    text-decoration: none;
+    font-size: 1.06rem;
+    opacity: 0.84;
+    padding: 7px 10px;
+    border-radius: 4px;
+    transition: background 0.18s, color 0.18s;
+}
+.nav-link:hover, .nav-link.active {
+    background: #23242a;
+    color: #36d399;
+    opacity: 1;
+}
+
+.nav-right {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.btn {
+    padding: 8px 18px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.2s;
+    text-decoration: none;   /* ← ДОДАТИ ОСЬ ЦЕ */
+    display: inline-block;   /* ← Це для однакового вигляду <a> і <button> */
+}
+
+.btn-login {
+    background: transparent;
+    color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+}
+.btn-login:hover, .btn-login.active {
+    background: #24262b;
+}
+
+.btn-register {
+    background: #36d399;
+    color: #101014;
+    font-weight: bold;
+}
+.btn-register:hover, .btn-register.active {
+    background: #23b57d;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+    width: 100%;
+}
+
+.centered-form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-card {
+    background: #fff;
+    border: 1px solid #d8dee4;
+    box-shadow: 0 1px 8px rgba(0,0,0,0.03);
+    border-radius: 8px;
+    padding: 36px 30px 26px 30px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.form-title {
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 1.45rem;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: #23242a;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: #222;
+    margin-bottom: 7px;
+    font-weight: 500;
+    letter-spacing: 0.01em;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    background: #f6f8fa;
+    border: 1px solid #d8dee4;
+    color: #222;
+    font-size: 1.08rem;
+    border-radius: 5px;
+    padding: 9px 12px;
+    outline: none;
+    transition: border 0.18s, box-shadow 0.15s;
+    box-shadow: 0 1px 2px rgba(220,220,220,0.06) inset;
+}
+.form-group input:focus {
+    border-color: #36d399;
+    box-shadow: 0 0 0 2px #36d39920;
+}
+
+.form-btn {
+    margin-top: 16px;
+    width: 100%;
+    font-size: 1.09rem;
+    font-weight: bold;
+    box-shadow: 0 1px 1.5px rgba(54,211,153,0.09);
+    border-radius: 5px;
+}
+
+.form-alt {
+    text-align: center;
+    margin-top: 18px;
+    color: #667;
+    font-size: 0.99rem;
+}
+.form-alt a {
+    color: #36d399;
+    text-decoration: none;
+    margin-left: 3px;
+    font-weight: 500;
+}
+.form-alt a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background: #101014;
+    color: #888;
+    text-align: center;
+    padding: 14px 0;
+    font-size: 0.98rem;
+    margin-top: 40px;
+}
+
+
+.form-message {
+    margin-top: 18px;
+    padding: 11px 18px;
+    border-radius: 7px;
+    font-size: 1.05rem;
+    font-weight: 500;
+    display: none;
+    text-align: center;
+    transition: all 0.2s;
+}
+.form-message.success {
+    background: #e8fbe5;
+    color: #218438;
+    border: 1px solid #b0ebb4;
+}
+.form-message.error {
+    background: #fff0f0;
+    color: #d73340;
+    border: 1px solid #ffc4c4;
+}

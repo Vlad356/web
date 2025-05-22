@@ -1,0 +1,126 @@
+/* Основні стилі профілю */
+.profile-container {
+  max-width: 800px;
+  margin: 120px auto 60px auto;
+  padding: 20px 30px;
+  background: #1e1f22;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(54, 211, 153, 0.1);
+  color: #f1f1f1;
+}
+
+.profile-container h1 {
+  font-size: 2.4rem;
+  color: #36d399;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.user-info p {
+  font-size: 1.1rem;
+  margin: 10px 0;
+}
+
+.user-info strong {
+  color: #36d399;
+}
+
+/* Стилізація форми завантаження треку */
+.upload-track {
+  margin-top: 40px;
+}
+
+.upload-track h2 {
+  font-size: 1.8rem;
+  color: #36d399;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-size: 1.05rem;
+}
+
+.form-group input {
+  padding: 8px 10px;
+  font-size: 1rem;
+  border: 1px solid #3a3a3a;
+  border-radius: 8px;
+  background: #2d2e32;
+  color: #f1f1f1;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #36d399;
+  box-shadow: 0 0 8px rgba(54, 211, 153, 0.2);
+}
+
+/* Окреме оформлення для input[type=file] */
+input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+/* Спеціальний клас для обгортки файлу */
+.form-group.file-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group.file-wrapper label[for="track-file"] {
+  background: linear-gradient(90deg, #36d399 0%, #23b57d 100%);
+  color: #101014;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  width: fit-content;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+  margin-bottom: 6px;
+}
+
+.form-group.file-wrapper label[for="track-file"]:hover {
+  background: linear-gradient(90deg, #23b57d 0%, #36d399 100%);
+  box-shadow: 0 4px 12px rgba(54, 211, 153, 0.4);
+}
+
+/* Вивід назви файлу */
+#selected-file-name {
+  color: #f1f1f1;
+  font-size: 0.95rem;
+  font-style: italic;
+}
+
+/* Кнопка завантаження */
+.btn-upload {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #36d399 0%, #23b57d 100%);
+  color: #101014;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-upload:hover {
+  background: linear-gradient(90deg, #23b57d 0%, #36d399 100%);
+  box-shadow: 0 4px 12px rgba(54, 211, 153, 0.4);
+}
+
+.form-message {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #d73340;
+  text-align: center;
+}

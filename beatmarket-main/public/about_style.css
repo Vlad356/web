@@ -1,0 +1,86 @@
+main {
+  max-width: 800px;
+  margin: 100px auto 60px auto;
+  padding: 20px 24px;
+  background: #1e1f22;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(54, 211, 153, 0.05);
+  color: #f1f1f1;
+  line-height: 1.75;
+  font-size: 1.07rem;
+}
+
+main h1 {
+  font-size: 2.2rem;
+  color: #36d399;
+  margin-bottom: 24px;
+  text-shadow: 0 2px 12px #36d39922;
+}
+
+main p {
+  margin-bottom: 18px;
+  text-align: justify;
+}
+
+main a {
+  color: #61dafb;
+  text-decoration: underline;
+}
+
+main a:hover {
+  color: #36d399;
+}
+
+footer {
+  text-align: center;
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 40px;
+}
+
+.floating-block {
+  z-index: 10;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #36d399;
+}
+
+.telegram-float {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 48px;
+  height: 48px;
+}
+
+.badge-top-left {
+  position: relative;
+  top: 0;
+  left: 0;
+  padding: 8px 12px;
+  background: #232b24;
+  border-radius: 10px;
+  display: inline-block;
+  z-index: 20;
+}
+
+
+.badge-fixed-bottom {
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  background: #101614;
+  padding: 10px 14px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px #36d39955;
+}
+
+.icon-img {
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+.icon-img:hover {
+  transform: scale(1.1);
+}

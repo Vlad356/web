@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Профіль | BeatMarket</title>
+    <link rel="stylesheet" href="main_style.css" />
+    <link rel="stylesheet" href="profile_style.css" />
+  </head>
+  <body>
+    <!-- Навігаційна панель (navbar) -->
+    <div class="navbar">
+      <div class="nav-left">
+        <span class="logo">🎵 BeatMarket</span>
+        <nav class="nav-menu">
+          <a href="index.html" class="nav-link">Головна</a>
+          <a href="catalog.html" class="nav-link">Каталог</a>
+          <a href="about.html" class="nav-link">Про нас</a>
+          <a
+            href="https://savelife.in.ua/donate/"
+            class="nav-link"
+            target="_blank"
+            rel="noopener noreferrer"
+            >Підтримка</a
+          >
+        </nav>
+      </div>
+      <div class="nav-right" id="nav-right"></div>
+    </div>
+
+    <main>
+      <div class="profile-container">
+        <h1>Профіль</h1>
+        <!-- Блок з інформацією про користувача -->
+        <div class="user-info">
+          <p>
+            <strong>Ім'я:</strong>
+            <span id="user-name"></span>
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <span id="user-email"></span>
+          </p>
+        </div>
+        <hr />
+
+        <!-- Форма для завантаження нового треку -->
+        <div class="upload-track">
+          <h2>Завантажити новий трек</h2>
+          <form id="upload-form" enctype="multipart/form-data">
+            <div class="form-group">
+              <label for="track-title">Назва треку:</label>
+              <input
+                type="text"
+                id="track-title"
+                name="trackTitle"
+                required
+                placeholder="Введіть назву треку"
+              />
+            </div>
+            <div class="form-group">
+              <label for="track-artist">Виконавець:</label>
+              <input
+                type="text"
+                id="track-artist"
+                name="trackArtist"
+                required
+                placeholder="Введіть ім'я виконавця"
+              />
+            </div>
+            <div class="form-group">
+              <label for="track-genre">Жанр:</label>
+              <input
+                type="text"
+                id="track-genre"
+                name="trackGenre"
+                placeholder="Наприклад, Електроніка, Поп"
+              />
+            </div>
+            <div class="form-group file-wrapper">
+            <label for="track-file">Оберіть MP3 файл</label>
+            <input type="file" id="track-file" name="trackFile" accept="audio/mp3" required />
+            <div id="selected-file-name">Файл не обрано</div>
+            </div>
+            <button type="submit" class="btn btn-upload">Завантажити трек</button>
+            <div id="upload-message" class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </main>
+
+    <footer>&copy; 2025 BeatMarket — музичний маркетплейс</footer>
+
+    <!-- Підключення спільних скриптів для авторизації та навігації -->
+    <script src="auth.js"></script>
+    <!-- Скрипт для ініціалізації профілю та обробки завантаження -->
+    <script src="profile.js"></script>
+  </body>
+</html>

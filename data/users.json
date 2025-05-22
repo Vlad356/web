@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "username": "admin",
+    "email": "admin@beatmarket.com",
+    "password": "admin123",
+    "role": "admin"
+  },
+  {
+    "id": 1747341194340,
+    "username": "user",
+    "email": "user@gmail.com",
+    "password": "11111",
+    "role": "user"
+  },
+  {
+    "id": 1747342023760,
+    "username": "user2",
+    "email": "user2@gmail.com",
+    "password": "11111",
+    "role": "user"
+  }
+]
